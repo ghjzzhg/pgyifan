@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HuQiu</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Walk Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	setInterval(function() {
+		var beforeTime = ""
+	    var now = (new Date()).toLocaleString();
+	    $('#nowTime').text(now);
+	}, 1000);
+
+	setInterval(function(){
+		var faultDat = "2016/1/3 16:30:00";
+		var stime = Date.parse(new Date(faultDat));
+		var etime = Date.parse(new Date());
+		var usedTime = etime - stime;
+		var fault = new Date(usedTime);
+		var y = fault.getFullYear()-1970;
+		var m = fault.getMonth()+1;
+		 m = m < 10 ? ('0' + m) : m;
+		var d = fault.getDate();
+		 d = d < 10 ? ('0' + d) : d;
+		var h = fault.getHours();
+		 h = h < 10 ? ('0' + h) : h;
+		var minute = fault.getMinutes();
+		 minute = minute < 10 ? ('0' + minute) : minute;
+	          var second = fault.getSeconds();
+	             second = second < 10 ? ('0' + second) : second;
+	    var faultTime = y + '年' + m + '个月' + d + '天 ' + '　' + h + '小时' + minute + '分钟' + second+"秒";
+		 $('#intervalTime').text(faultTime);
+	}, 1000);
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<form>
+<!-- 						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required=""> -->
+<!-- 						<input type="submit" value="" > -->
+<!-- 						<div class="clearfix"> </div> -->
+						<!-- 透明背景 -->
+						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+						<!-- 白色背景 -->
+<!-- 						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script> -->
+					</form>
+				</div>
+				<div class="header-left1">
+<!-- 					<h1><a href="index.html">遇见<span> 遇见你是最美丽的意外 </span></a></h1> -->
+					<h1><a href="index.html">遇见<span>&nbsp;&nbsp;&nbsp;&nbsp;帆起潮涌春风至 </span></a></h1>
+				</div>
+				<!-- #push_sidebar -->
+				<div class="top-nav">
+					 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>回忆录</h3>
+						<ul>
+							<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+							<li><a href="shilu.html"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>石路</a></li>
+							<li><a href="huqiu.html"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>虎丘</a></li>
+							<li><a href="photos.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>美照</a></li>
+							<li><a href="smile.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>笑容</a></li>
+							<li><a href="footmark.html"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>足迹</a></li>
+						</ul>
+					</nav>
+					 <div class="main buttonset">	
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+					</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+						<script src="js/classie.js"></script>
+						<script>
+							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+							showRightPush = document.getElementById( 'showRightPush' ),
+							body = document.body;
+
+							showRightPush.onclick = function() {
+								classie.toggle( this, 'active' );
+								classie.toggle( body, 'cbp-spmenu-push-toleft' );
+								classie.toggle( menuRight, 'cbp-spmenu-open' );
+								disableOther( 'showRightPush' );
+							};
+
+							function disableOther( button ) {
+								if( button !== 'showRightPush' ) {
+									classie.toggle( showRightPush, 'disabled' );
+								}
+							}
+						</script>
+						<!-- /script-for-menu -->
+				</div>
+				<!-- /#push_sidebar -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- services -->
+	<div class="services">
+		<div class="container">
+			<h3>Huqiu</h3>
+			<!-- 愿你的一生如风景一样美丽 -->
+			<p class="dummy-text">May your life be as beautiful as the scenery .</p>
+			<div class="services-grids">
+				<div class="col-md-4 services-grid">
+					<figure class="blog-figure">
+						<img src="images/huqiu1.jpg" alt=" " class="img-responsive" />
+						<div class="blog-discription">
+							<div class="theme-border">
+								<div class="tg-display-table">
+									<div class="tg-display-table-cell">
+										<div class="blog-title">
+											<h4><a href="index.html">Huqiu</a></h4>
+											<ul class="blod-meta">
+												<li>Lucky By: <a href="#">We</a></li>
+												<li>Dated: August , 2015</li>
+												<div class="clearfix"> </div>
+											</ul>
+											<!-- 有无数次进入这扇门，但只有那一次我还记得。 -->
+											<p>There have been countless times to enter this gate, but only that time I still remember .</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</figure>
+					<!-- 这是通往幸福的大门。幸福有时是短暂的。  -->
+					<h5><a href="words.html">It's a gateway to happiness. And happiness is sometimes short-lived. </a></h5>
+					<div class="more more1">
+						<a href="words.html" class="type-4 type-41">
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>	
+							<span> Read More... </span>
+							<span> Read More... </span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">
+					<figure class="blog-figure">
+						<img src="images/huqiu2.jpg" alt=" " class="img-responsive" />
+						<div class="blog-discription">
+							<div class="theme-border">
+								<div class="tg-display-table">
+									<div class="tg-display-table-cell">
+										<div class="blog-title">
+											<h4><a href="index.html">Huqiu</a></h4>
+											<ul class="blod-meta">
+												<li>Lucky By: <a href="#">We</a></li>
+												<li>Dated: August , 2015</li>
+												<div class="clearfix"> </div>
+											</ul>
+											<!-- 你身后的云彩让你想起了那个雨夜，也让你想起了我们。  -->
+											<p>Do the clouds behind you remind you of that rainy night, and a little awkward of us</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</figure>
+					<!-- 这不是风车，不是花，是美好的记忆。  -->
+					<h5><a href="words.html"> It's not a windmill, it's not a flower, it's a good memory. </a></h5>
+					<div class="more more1">
+						<a href="words.html" class="type-4 type-41">
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>	
+							<span> Read More... </span>
+							<span> Read More... </span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">
+					<figure class="blog-figure">
+						<img src="images/huqiu3.jpg" alt=" " class="img-responsive" />
+						<div class="blog-discription">
+							<div class="theme-border">
+								<div class="tg-display-table">
+									<div class="tg-display-table-cell">
+										<div class="blog-title">
+											<h4><a href="index.html">Huqiu</a></h4>
+											<ul class="blod-meta">
+												<li>Lucky By: <a href="#">We</a></li>
+												<li>Dated: August , 2015</li>
+												<div class="clearfix"> </div>
+											</ul>
+											<!-- 不知你当时有没有看到这幅风景，有没有觉得很浪漫，很美好 -->
+											<p>I wonder if you saw this scene at that time, did you feel very romantic, very beautiful </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</figure>
+					<!-- 同一幅景色，不同的人看到会有不同的感受 -->
+					<h5><a href="words.html">The same scene, different people see will have different feelings.</a></h5>
+					<div class="more more1">
+						<a href="words.html" class="type-4 type-41">
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>
+							<span> Read More... </span>	
+							<span> Read More... </span>
+							<span> Read More... </span>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="offered-services">
+		<div class="container">
+			<h3>Say You</h3>
+			<!-- 一个美丽、任性又调皮的女孩 -->
+			<p class="dummy-text">A beautiful, capricious and naughty girl .</p>
+			<div class="offered-services-grids">
+				<div class="col-md-4 offered-services-grid">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<!-- 既美丽又善良的你 -->
+<!-- 							 You have beauty and personality.   -->
+<!-- 							 You're beautiful and intelligent.  -->
+							 You are beautiful and kind 
+							</a>
+						  </h4>
+						  <!-- 你身上有一种独特的魅力，这种感觉是我以前从未见过的 -->
+						  <p>"You have a unique charm that I've never seen before.</p>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						  <div class="panel-body">
+						  <!-- 在苏州的那天晚上因为你的善良被我留了那么久，对不起你 -->
+							That night in Suzhou because of your kindness I have been so long sorry you. 
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<!-- 既调皮又可爱的你 -->
+							  You're naughty and cute.
+							</a>
+						  </h4>
+						  <!-- 我觉得你的调皮是你的性格决定的，很招别人的喜欢 -->
+						  <p>"I think your mischief is determined by your character and is popular with others .</p>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						  <div class="panel-body">
+						  <!-- 可爱一定是你从小就与生俱来的，我坚信 -->
+							Loveliness must have been your birthright, I firmly believe 
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+						  <h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							<!-- 既聪明又上进的你 -->
+							  You're smart and motivated. 
+							</a>
+						  </h4>
+						  <!-- 我觉得聪明的人一定会活出自我，活的真实，而你就是 -->
+						  <p>"I think smart people will live out of me, live real, and you are. </p>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						  <div class="panel-body">
+						  <!-- 90后绝对不是堕落的一群人，因为有你在 -->
+							After 90 is definitely not a fallen group of people, because you are in 
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 offered-services-grid">
+					<img src="images/xuchang1.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-4 offered-services-grid1">
+					<div class="panel-group1" id="accordion1" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default panel1">
+						<div class="panel-heading" role="tab" id="headingFour">
+						  <h4 class="panel-title panel-title1">
+							<a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+							<!-- 说河南话的你 -->
+							  You who speak Henan dialect 
+							</a>
+						  </h4>
+						  <!-- 我以前觉得河南话也很土，但是现在觉得河南话特别亲切 -->
+						  <p>"I used to think Henan dialect was also very local, but now I think Henan dialect is very kind.</p>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						  <div class="panel-body">
+						  <!-- 现在不管遇到河南的朋友或者同事，我都会让他们说几句河南话给我听 -->
+							Now, whether I meet friends or colleagues from Henan, I will ask them to speak a few Henan words to me. 
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default panel1">
+						<div class="panel-heading" role="tab" id="headingFive">
+						  <h4 class="panel-title panel-title1">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							  <!-- 许昌上学的你 -->
+							  Your school in Xuchang  
+							</a>
+						  </h4>
+						  <!-- 这是一座既亲切又陌生的城市，因为有你而亲切 -->
+						  <p>"This is a city that is both kind and strange, because of you .</p>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+						  <div class="panel-body">
+						  <!-- 那里的车站、小河以及那座桥我都历历在目 -->
+							I remember the station, the river and the bridge. 
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default panel1">
+						<div class="panel-heading" role="tab" id="headingSix">
+						  <h4 class="panel-title panel-title1">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							<!-- 家住遂平的你 -->
+							  You live in Suiping 
+							</a>
+						  </h4>
+						  <!-- 我永远不会忘记遂平有座嵖岈山，虽然我还没去过 -->
+						  <p>"I will never forget that there is a chaya mountain in Suiping, although I have never been there.</p>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+						  <div class="panel-body">
+						  <!-- 我又想起了你弟弟的声音，当年真的是个小屁孩，不知道现在什么样了 -->
+							I thought of your brother's voice again. It was really a little boy. I don't know what it is now. 
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- for bootstrap working -->
+				<script src="js/bootstrap.js"></script>
+			<!-- //for bootstrap working -->
+		</div>
+	</div>
+<!-- //services -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 footer-grid">
+				<img src="images/yf4.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h2><a href="index.html">Can <span>you remember me?</span></a></h2>
+				<p>Now the most regret is the farewell three years ago, but at that time was rejected after sad to the extreme, did stupid things </p>
+<!-- 				<ul> -->
+<!-- 					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li> -->
+<!-- 					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li> -->
+<!-- 					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li> -->
+<!-- 				</ul> -->
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Flickr Photos</h4>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you2.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Booking Hours</h4>
+				<div class="footer-grid2">
+					<ul class="timings">
+						<li>Last time we met<i>-</i> <div id="faultDate">2016-1-3 16:30:00</div></li>
+							<li>Present time  <i>-</i> 
+								<div id = "nowTime"></div>
+							</li>
+						<li>Time is over <i>-</i>
+							<div id = "intervalTime"></div>
+						</li>
+					</ul>
+<!-- 					<div class="social-icons social-icons1"> -->
+<!-- 						<ul> -->
+<!-- 							<li><a href="#" class="twitter"></a></li> -->
+<!-- 							<li><a href="#" class="facebook"></a></li> -->
+<!-- 							<li><a href="#" class="google"></a></li> -->
+<!-- 							<li><a href="#" class="p"></a></li> -->
+<!-- 						</ul> -->
+<!-- 					</div> -->
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p >Copyright &copy; 2018 - <span>Collect from 一帆专属</span>&nbsp;&nbsp;|&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" title="苏ICP备18068520号" target="_blank" style="font-family:arial;font-size:15px;">苏ICP备18068520号</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

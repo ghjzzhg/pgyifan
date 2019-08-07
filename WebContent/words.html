@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Single</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Walk Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	setInterval(function() {
+		var beforeTime = ""
+	    var now = (new Date()).toLocaleString();
+	    $('#nowTime').text(now);
+	}, 1000);
+
+	setInterval(function(){
+		var faultDat = "2016/1/3 16:30:00";
+		var stime = Date.parse(new Date(faultDat));
+		var etime = Date.parse(new Date());
+		var usedTime = etime - stime;
+		var fault = new Date(usedTime);
+		var y = fault.getFullYear()-1970;
+		var m = fault.getMonth()+1;
+		 m = m < 10 ? ('0' + m) : m;
+		var d = fault.getDate();
+		 d = d < 10 ? ('0' + d) : d;
+		var h = fault.getHours();
+		 h = h < 10 ? ('0' + h) : h;
+		var minute = fault.getMinutes();
+		 minute = minute < 10 ? ('0' + minute) : minute;
+	          var second = fault.getSeconds();
+	             second = second < 10 ? ('0' + second) : second;
+	    var faultTime = y + '年' + m + '个月' + d + '天 ' + '　' + h + '小时' + minute + '分钟' + second+"秒";
+		 $('#intervalTime').text(faultTime);
+	}, 1000);
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<form>
+<!-- 						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required=""> -->
+<!-- 						<input type="submit" value="" > -->
+<!-- 						<div class="clearfix"> </div> -->
+						<!-- 透明背景 -->
+						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+						<!-- 白色背景 -->
+<!-- 						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script> -->
+					</form>
+				</div>
+				<div class="header-left1">
+					<h1><a href="index.html">拜托 <span> 请照顾好自己 </span></a></h1>
+				</div>
+				<!-- #push_sidebar -->
+				<div class="top-nav">
+					 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>回忆录</h3>
+						<ul>
+							<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+							<li><a href="shilu.html"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>石路</a></li>
+							<li><a href="huqiu.html"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>虎丘</a></li>
+							<li><a href="photos.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>美照</a></li>
+							<li><a href="smile.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>笑容</a></li>
+							<li><a href="footmark.html"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>足迹</a></li>
+						</ul>
+					</nav>
+					 <div class="main buttonset">	
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+					</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+						<script src="js/classie.js"></script>
+						<script>
+							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+							showRightPush = document.getElementById( 'showRightPush' ),
+							body = document.body;
+
+							showRightPush.onclick = function() {
+								classie.toggle( this, 'active' );
+								classie.toggle( body, 'cbp-spmenu-push-toleft' );
+								classie.toggle( menuRight, 'cbp-spmenu-open' );
+								disableOther( 'showRightPush' );
+							};
+
+							function disableOther( button ) {
+								if( button !== 'showRightPush' ) {
+									classie.toggle( showRightPush, 'disabled' );
+								}
+							}
+						</script>
+						<!-- /script-for-menu -->
+				</div>
+				<!-- /#push_sidebar -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- single -->
+	<div class="single">
+		<div class="container">
+			<div class="col-md-4 single-right">
+				<div class="blog-right1">
+					<div class="search1">
+						<!-- 情书 -->
+						<h3>Love Letter</h3>
+						<form>
+							<input type="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+							<input type="submit" value="Transmit">
+						</form>
+					</div>
+					<div class="categories">
+						<h3>Beautiful You. </h3>
+						<ul>
+							<li><a href="#">A charming smile  </a></li><!-- 迷人的笑容 -->
+							<li><a href="#">Cute tiger teeth. </a></li><!-- 可爱的虎牙 -->
+							<li><a href="#">A perfect figure </a></li><!-- 完美的身材 -->
+							<li><a href="#">Beautiful Henan dialect </a></li><!-- 动听的河南话 -->
+							<li><a href="#">An optimistic attitude </a></li><!-- 乐观的心态 -->
+							<li><a href="#">......</a></li>
+						</ul>
+					</div>
+					<div class="categories categories-mid">
+						<h3> Important Date</h3>
+						<ul>
+							<li><a href="#">August ,2015</a></li><!-- 相识 -->
+							<li><a href="#">August,2015</a></li><!-- 虎丘 -->
+							<li><a href="#">August,2015</a></li><!-- 山塘街 -->
+							<li><a href="#">November 23,2015</a></li><!-- 苏州火车站 -->
+							<li><a href="#">January 2,2016</a></li><!-- 许昌 -->
+							<li><a href="#">January 3,2016</a></li><!-- 离别 -->
+						</ul>
+					</div>
+					<div class="related-posts">
+						<h3>I want to tell you </h3>
+						<div class="related-post">
+							<div class="related-post-left">
+								<a href="single.html"><img src="images/huqiu3.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="related-post-right">
+								<h4><a href="single.html">Travelling </a></h4>
+								<p>Looking forward to a trip with you,  
+									<span>To a strange place </span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="related-post">
+							<div class="related-post-left">
+								<a href="single.html"><img src="images/xuchang5.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="related-post-right">
+								<h4><a href="single.html">With you. </a></h4>
+								<p>I want to be with you, 
+									<span>So it's always there for you. </span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="related-post">
+							<div class="related-post-left">
+								<a href="single.html"><img src="images/shan/guzhen2.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="related-post-right">
+								<h4><a href="single.html">Beautiful night view </a></h4>
+								<p>Again beautiful night scene,  
+									<span>without you in all feel dim .</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="related-post">
+							<div class="related-post-left">
+								<a href="single.html"><img src="images/shan/guzhenye.jpg" alt=" " class="img-responsive" /></a>
+							</div>
+							<div class="related-post-right">
+								<h4><a href="single.html">Beautiful night view </a></h4>
+								<p>Again beautiful night scene,
+									<span>without you in all feel dim .</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 single-left">
+				<div class="comments">
+					<ul>
+						<li><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>3th Janurary 2016</li>
+						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">YiFan</a></li>
+<!-- 						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#">5 Comments</a></li> -->
+						<li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><a href="#">5 Tags</a></li>
+					</ul>
+				</div>
+				<!-- 枕头里藏满了发了霉的梦，梦里住的都是你 -->
+<!-- 				<h3>The pillow is full of mouldy dreams. You live in them. </h3> -->
+				<!-- 我希望你过得不好,事业不顺众叛亲离,变傻变胖变丑,这样我才能触碰到你。我又希望你过得很好,冷了有人给你准备衣服,饿了有人给你做好吃的,生理期有人能搓热双手给你焐肚子,把你宠的像个孩子一样,你还是过得好点吧,即使你不在我身边 -->
+				<!-- 你能不能稍微告诉我一点你想我了，小点声！就我们两个听见，我一定会去找你的，我什么都不管了，让你难过的事，我再也不做了 -->
+				<h3> Can you just tell me a little bit you miss me, keep it down! As far as we both heard, I would certainly go to you, I would not care about anything, the things that made you sad, I would never do it again. </h3>
+				<div class="single-left1">
+					<!-- 你是非常可爱的人，真应该遇到最好的人，我也真希望我就是 -->
+					<h5>You are such a lovely person that you should have met the best, and I wish I were.</h5>
+					<div class="single-left1-grids">
+						<div class="col-md-8 single-left1-grid">
+						<!-- 我希望你过得不好,事业不顺众叛亲离,变傻变胖变丑,这样我才能触碰到你。我又希望你过得很好,冷了有人给你准备衣服,饿了有人给你做好吃的,生理期有人能搓热双手给你焐肚子,把你宠的像个孩子一样,你还是过得好点吧,即使你不在我身边 -->
+<!-- 							<p>"I hope you have a bad life, a bad career, stupid, fat, ugly, so I can touch you. -->
+<!-- 							    I hope you have a good time again, cold someone for you to prepare clothes,  -->
+<!-- 							    hungry for you to make delicious,physiological period someone can rub your hands  -->
+<!-- 							    to warm your stomach, pet you like a child, you still live better, even if you are  -->
+<!-- 							    not by my side </span></p> -->
+							<p>"After all, tomorrow is another day!</br>
+<!-- 								不管怎样，明天又是新的一天！ -->
+								Land is the only thing in the world worth working for, worth fighting for, worth dying for. Because it's the only thing that lasts.</br>
+<!-- 								土地是世界上唯一值得你去为之工作, 为之战斗, 为之牺牲的东西，因为它是唯一永恒长存的东西。 -->
+								I wish I could be more like you.</br>
+<!-- 								我多么希望我能像你一样。 -->
+								Whatever comes, I’II love you, just as I do now. Until I die.</br>
+<!-- 								无论发生什么事，我都会像现在一样爱你，直到永远。 -->
+								I think it’s hard winning a war with words.</br>
+<!-- 								我认为纸上谈兵没什么作用。 -->
+								Sir, you’re no gentleman. And you miss are no lady.</br>
+<!-- 								先生，你可不是绅士;小姐，你也不是个淑女。 -->
+								I never give anything without expecting something in return. I always get paid.</br>
+<!-- 								我可不会做任何不期望得到回报的事，我总是要得到报酬。 -->
+								In spite of you and me and the whole silly world going to pieces around us, I love you.</br>
+<!-- 								不管你和我，还有这无助的世界将走向怎样的毁灭，我都会爱着你。 -->
+								If I have to lie, steal, cheat or kill, as God as my witness, I’II never be hungry again!</br>
+<!-- 								即使让我去撒谎、去偷、去骗，或者去杀人，上帝作证，我也再不要挨饿了! -->
+								Now I find myself in a world which for me is worse than death. A world in which there is no place for me.</br>
+<!-- 								现在我发现自己活在一个生不如死的世界，一个没有我容身之处的世界。 -->
+								You’re throwing away happiness with both hands. And reaching out for something that will never make you happy.</br>
+<!-- 								你将自己的幸福拱手相让，却去追求一些根本不会使你幸福的东西。 -->
+								Home. I’II go home. And I’II think of some way to get him back. After all tomorrow is another day
+<!-- 								家，我必须回家，我一定要想办法让他回来。毕竟，明天又是全新的一天。  -->
+								<span style="float:right">------《Gone with the Wind》</span>
+								</span></p>
+						</div>
+						<div class="col-md-4 single-left1-grid">
+							<img src="images/huqiu7.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="single-left2">
+					<!-- 有一次我对朋友说，不要轻易地对别人提起爱或喜欢。除非你是在玩游戏。
+					因为有些感情，它们隐藏在我们的心里。只有沉默才能表达我们对它的尊重。
+					也是证明这一点的唯一方法。只能付钱。你是我的北极星。当我看着你的时候，
+					我总能找到回家的方向。  -->
+					<h4>"Once I said to a friend, never mention love or like easily to others. Unless you are gameplay.
+					 Because some feelings, they are hidden in our hearts. Only silence can show our respect for it.
+					  And the only way to prove it. Can only be paid. You are my North Star. When I look at you,
+					   I can always find the direction of home. 
+					   <span style="float:right">------《Message in a Bottle》</span>
+					   </h4>
+					<div class="col-md-4 single-left1-grid">
+						<img src="images/huqiu4.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-8 single-left1-grid">
+						<!-- 爱情没有那么多借口，如果最终没能在一起，只能说明爱的不够。
+						茫茫人生，或有一人。陷其所爱，忘乎所以。不问初心，不为相期，不望相守，不许相依。只愿烂漫时，与子共相栖。
+						我， 没有什么特别的， 只是一个 有着普通想法的普通人， 过着普通的生活。 没有人为我立碑著书， 歌功颂德， 
+						我的名字也将很快被人遗忘， 但是在一件事情上， 我比任何人都要成功。 我全心全意地爱着一个人， 而且对我来说 这就足够了。
+						最好的爱能唤醒我们的灵魂，激励我们追求理想，点燃我们心中的激情之火，也能给我们的内心带来安宁。 -->
+						<p>"Love does not have so many excuses, if the final can not be together, can only show that love is not enough. 
+						The boundless life, may have one person. Fall in its love, forget about it. Do not ask the first mind, not for the phase,
+						 do not look to each other, do not depend on each other. I only wish to live with my son when I am unruly. 
+						 I, nothing special, just a general idea of ordinary people, living an ordinary life. No one has written a monument for me,
+						  and my name will soon be forgotten, but in one thing I am more successful than anyone else. I love someone with all my 
+						  heart, and that's enough for me. The best love wakes up our souls, inspires us to pursue our ideals, ignites the fire of 
+						  passion in our hearts, and brings peace to our hearts. 
+						  <span style="float:right">------《Notebook》</span>
+						  </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="single-left3">
+				<!-- 我希望你有一个糟糕的生活，一个糟糕的职业，愚蠢，肥胖，丑陋，所以我可以触摸你。
+				我希望你有一个愉快的时光，寒冷的人为你准备衣服，饥渴的为你做美味的，生理的时候有人
+				可以揉你的手来温暖你的胃，抚摸你就像一个孩子，你仍然活得更好，即使你不在我身边。  -->
+					<p>I hope you have a bad life, a bad career, stupid, fat, ugly, so I can touch you.
+						I hope you have a good time again, cold someone for you to prepare clothes, 
+ 						hungry for you to make delicious,physiological period someone can rub your hands 
+						to warm your stomach, pet you like a child, you still live better, even if you are
+						not by my side.</p>
+					<div class="single-left3-grids">
+						<div class="col-md-6 single-left3-grid">
+							<img src="images/you5.jpg" alt=" " class="img-responsive" />
+							<!-- 我愿是你手中的心 -->
+							<p>I wish I were the heart in your hand </p>
+						</div>
+						<div class="col-md-6 single-left3-grid">
+							<img src="images/you6.jpg" alt=" " class="img-responsive" />
+							<p>So lovely of you </p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="admin">
+					<div class="admin-left">
+						<img src="images/shan/yf1.gif" alt=" " class="img-responsive" />
+					</div>
+					<div class="admin-right">
+						<ul>
+							<li><a href="#">yifan</a> <i>|</i></li>
+							<li><a href="#">hongjiang</a></li>
+						</ul>
+						<!-- 我是个普通人。我不能指望你在人群中注意到。  -->
+						<p>I am an ordinary man. I can't expect you to notice in the crowd. </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="admin">
+					<div class="admin-left">
+						<img src="images/shan/yf5.gif" alt=" " class="img-responsive" />
+					</div>
+					<div class="admin-right">
+						<ul>
+							<li><a href="#">yifan</a> <i>|</i></li>
+							<li><a href="#">hongjiang</a></li>
+						</ul>
+						<!-- 一生至少该有一次，为了某个人而忘了自己，不求有结果，不求同行，不求曾经拥有，甚至不求你爱我，只求在我最美的年华里，遇到你。 -->
+						<p>There should be at least one time in your life that you forget yourself for someone,
+						 asking for no result, no company, no possession, no love for me, just to meet you in my
+						  most beautiful years. </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+<!-- 				<div class="comments-admin"> -->
+<!-- 					<h4>3 Comments</h4> -->
+<!-- 					<div class="comments-admin-grids"> -->
+<!-- 						<div class="comments-admin-grid"> -->
+<!-- 							<div class="comments-admin-grid-left"> -->
+<!-- 								<img src="images/3.png" alt=" " class="img-responsive" /> -->
+<!-- 							</div> -->
+<!-- 							<div class="comments-admin-grid-right"> -->
+<!-- 								<p>In a free hour, when our power of  -->
+<!-- 									choice is untrammelled and when nothing prevents our being able  -->
+<!-- 									to do what we like best, every pleasure is to be welcomed and  -->
+<!-- 									every pain avoided. But in certain circumstances and owing to  -->
+<!-- 									the claims of duty or the obligations of business  -->
+<!-- 									it will frequently occur.</p> -->
+<!-- 								<div class="reply"> -->
+<!-- 									<a href="#">Reply</a> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="clearfix"> </div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+			</div>
+			<div class="clearfix"></div>
+<!-- 			<div class="leave-a-comment"> -->
+<!-- 				<h3>Leave your comment here</h3>  -->
+<!-- 				<form> -->
+<!-- 					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required=""> -->
+<!-- 					<input type="email" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required=""> -->
+<!-- 					<input type="text" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}" required=""> -->
+<!-- 					<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type Your Comment here...';}" required="">Type Your Comment here...</textarea> -->
+<!-- 					<input type="submit" value="Add Comment"> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
+		</div>
+	</div>
+<!-- //single -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 footer-grid">
+				<img src="images/yf3.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h2><a href="index.html">Can <span>you remember me?</span></a></h2>
+				<p>Now the most regret is the farewell three years ago, but at that time was rejected after sad to the extreme, did stupid things </p>
+<!-- 				<ul> -->
+<!-- 					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li> -->
+<!-- 					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li> -->
+<!-- 					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li> -->
+<!-- 				</ul> -->
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Flickr Photos</h4>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/you2.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="single.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Booking Hours</h4>
+				<div class="footer-grid2">
+					<ul class="timings">
+						<li>Last time we met<i>-</i> <div id="faultDate">2016-1-3 16:30:00</div></li>
+							<li>Present time  <i>-</i> 
+								<div id = "nowTime"></div>
+							</li>
+						<li>Time is over <i>-</i>
+							<div id = "intervalTime"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p >Copyright &copy; 2018 - <span>Collect from 一帆专属</span>&nbsp;&nbsp;|&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" title="苏ICP备18068520号" target="_blank" style="font-family:arial;font-size:15px;">苏ICP备18068520号</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

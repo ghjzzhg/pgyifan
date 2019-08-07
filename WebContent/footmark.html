@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Footmark</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Walk Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- 旅行圆形旋转 -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link rel="stylesheet" href="css/revolve.css">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	setInterval(function() {
+		var beforeTime = ""
+	    var now = (new Date()).toLocaleString();
+	    $('#nowTime').text(now);
+	}, 1000);
+
+	setInterval(function(){
+		var faultDat = "2016/1/3 16:30:00";
+		var stime = Date.parse(new Date(faultDat));
+		var etime = Date.parse(new Date());
+		var usedTime = etime - stime;
+		var fault = new Date(usedTime);
+		var y = fault.getFullYear()-1970;
+		var m = fault.getMonth()+1;
+		 m = m < 10 ? ('0' + m) : m;
+		var d = fault.getDate();
+		 d = d < 10 ? ('0' + d) : d;
+		var h = fault.getHours();
+		 h = h < 10 ? ('0' + h) : h;
+		var minute = fault.getMinutes();
+		 minute = minute < 10 ? ('0' + minute) : minute;
+	          var second = fault.getSeconds();
+	             second = second < 10 ? ('0' + second) : second;
+	    var faultTime = y + '年' + m + '个月' + d + '天 ' + '　' + h + '小时' + minute + '分钟' + second+"秒";
+		 $('#intervalTime').text(faultTime);
+	}, 1000);
+</script>
+<!-- 地图 -->
+<style type="text/css">
+	html{height:40%} 
+	body{height:40%;margin:0px;padding:0px} 
+	#allmap{height:600px;width:750px;border:1px solid #C1CDCD;} 
+/* 	body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";} */
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F86niFcfAEW5daGDVXDhGHGiY0b2GOwM"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<form>
+<!-- 						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required=""> -->
+<!-- 						<input type="submit" value="" > -->
+<!-- 						<div class="clearfix"> </div> -->
+						<!-- 透明背景 -->
+						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+						<!-- 白色背景 -->
+<!-- 						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script> -->
+					</form>
+				</div>
+				<div class="header-left1">
+<!-- 					<h1><a href="index.html">旅行<span>有的事情现在不做，就一辈子也不会做了。 </span></a></h1> -->
+					<h1><a href="index.html">旅行<span>&nbsp;&nbsp;&nbsp;&nbsp;你心安好天为鉴 </span></a></h1>
+				</div>
+				<!-- #push_sidebar -->
+				<div class="top-nav">
+					 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>回忆录</h3>
+						<ul>
+							<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+							<li><a href="shilu.html"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>石路</a></li>
+							<li><a href="huqiu.html"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>虎丘</a></li>
+							<li><a href="photos.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>美照</a></li>
+							<li><a href="smile.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>笑容</a></li>
+							<li><a href="footmark.html"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>足迹</a></li>
+						</ul>
+					</nav>
+					 <div class="main buttonset">	
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+					</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+						<script src="js/classie.js"></script>
+						<script>
+							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+							showRightPush = document.getElementById( 'showRightPush' ),
+							body = document.body;
+
+							showRightPush.onclick = function() {
+								classie.toggle( this, 'active' );
+								classie.toggle( body, 'cbp-spmenu-push-toleft' );
+								classie.toggle( menuRight, 'cbp-spmenu-open' );
+								disableOther( 'showRightPush' );
+							};
+
+							function disableOther( button ) {
+								if( button !== 'showRightPush' ) {
+									classie.toggle( showRightPush, 'disabled' );
+								}
+							}
+						</script>
+						<!-- /script-for-menu -->
+				</div>
+				<!-- /#push_sidebar -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- contact -->
+	<div class="contact">
+		<div class="container">
+			<!-- 旋转图形 -->
+			<div class="htmleaf-container">
+				<div style="text-align:center;clear:both">
+					<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+					<script src="/follow.js" type="text/javascript"></script>
+				</div>
+				<h1>美女在银川</h1>
+				<h2>我不想让老天再给我一次机会，我现在就想对你说我爱你</h2>
+				<div class="carousel" data-gap="80">
+					<figure>
+							<img src="images/travel/1.jpg" alt="">
+						<img src="images/travel/2.jpg" alt="">
+						<img src="images/travel/3.jpg" alt="">
+						<img src="images/travel/4.jpg" alt="">
+						<img src="images/travel/5.jpg" alt="">
+						<img src="images/travel/6.jpg" alt="">
+						<img src="images/travel/7.jpg" alt="">
+						<img src="images/travel/8.jpg" alt="">
+					</figure>
+					<nav>
+						<button class="nav prev"><<<向前</button>
+						<button class="nav next">向后>>></button>
+					</nav>
+				</div>
+			</div>
+			<div class="col-md-8 contact-left">
+				
+				<div id="allmap"class="col-md-8 contact-left1" >
+					<h3>View On Map</h3>
+<!-- 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.968159538635!2d-74.10367368464232!3d40.82866303840723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f8bfccce9f9b%3A0x6feca65d6e89eff7!2sService+Plus+Travel+Inc!5e0!3m2!1sen!2sin!4v1455341290029" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+				</div>
+				<div class="col-md-4 contact-left1" style="margin-top: 20px;width:600px;">
+					<h4>Our intersection. </h4>
+					<ul>
+						<li><span></span>These are the places where we've lived, but I don't want our intersection to be all there is, I want to have our footprint on 9.6 million square kilometers.</br> Oh, NO!!! Far beyond 9.6 million square kilometers. </li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 contact-right">
+				<h3>Holy church</h3>
+				<p>What's your dream wedding like? Where do you want to hold a sacred wedding? Church or sea? </p>
+				<div class="contact-right1">
+					<img src="images/huqiu4.jpg" alt=" " class="img-responsive" />
+					<div class="contact-right1-pos">
+						<div class="contact-right1-pos1">
+							<p><span>All girls</span> want a special surprise,what's your favorite <span>surprise?</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 footer-grid">
+				<img src="images/yf4.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h2><a href="index.html">Can <span>you remember me?</span></a></h2>
+				<p>Now the most regret is the farewell three years ago, but at that time was rejected after sad to the extreme, did stupid things </p>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Flickr Photos</h4>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you2.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Booking Hours</h4>
+				<div class="footer-grid2">
+					<ul class="timings">
+						<li>Last time we met<i>-</i> <div id="faultDate">2016-1-3 16:30:00</div></li>
+							<li>Present time  <i>-</i> 
+								<div id = "nowTime"></div>
+							</li>
+						<li>Time is over <i>-</i>
+							<div id = "intervalTime"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p >Copyright &copy; 2018 - <span>Collect from 一帆专属</span>&nbsp;&nbsp;|&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" title="苏ICP备18068520号" target="_blank" style="font-family:arial;font-size:15px;">苏ICP备18068520号</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
+<script type="text/javascript">
+	//百度地图API功能-创建Map实例
+	var markerArr = [  
+              { title: "名称：许昌火车站", point: "113.827392,34.025294", address: "河南省许昌市许昌火车站", fan: "许昌一别，已有三年" },  
+              { title: "名称：苏州七里山塘", point: "120.609569,31.32316", address: "江苏省苏州市石路七里山塘街 ", fan: "七里山塘的水还是那么清那么美" },  
+              { title: "名称：遂平嵖岈山", point: "113.736619,33.135727", address: "河南省遂平市嵖岈山景区", fan: "嵖岈山的风景依旧那么美" },  
+              { title: "名称：我们的大北京", point: "116.404188,39.915241", address: "我们的大北京", fan: "在北京的你是否也依旧那么美" },
+              { title: "名称：加勒斯恩杰克岛", point: "15.384605,43.979173", address: "Galesnjak", fan: "你愿意陪我去吗" }   
+          ];  
+                var map; //Map实例  
+                function map_init() {  
+                    map = new BMap.Map("allmap");  
+                    //第1步：设置地图中心点，金鼎名城118.337658,34.348212    济宁市政府116.593693,35.420591  43.979173,15.384605
+                    var point = new BMap.Point(118.337658,34.348212);  
+                    //第2步：初始化地图,设置中心点坐标和地图级别。  
+                    map.centerAndZoom(point, 7);  
+                    //第3步：启用滚轮放大缩小  
+                    map.enableScrollWheelZoom(true);  
+                    //第4步：向地图中添加缩放控件  
+                    var ctrlNav = new window.BMap.NavigationControl({  
+                        anchor: BMAP_ANCHOR_TOP_LEFT,  
+                        type: BMAP_NAVIGATION_CONTROL_LARGE  
+                    });  
+                    map.addControl(ctrlNav);  
+                    //第5步：向地图中添加缩略图控件  
+                    var ctrlOve = new window.BMap.OverviewMapControl({  
+                        anchor: BMAP_ANCHOR_BOTTOM_RIGHT,  
+                        isOpen: 1  
+                    });  
+                    map.addControl(ctrlOve);  
+  
+                    //第6步：向地图中添加比例尺控件  
+                    var ctrlSca = new window.BMap.ScaleControl({  
+                        anchor: BMAP_ANCHOR_BOTTOM_LEFT  
+                    });  
+                    map.addControl(ctrlSca);
+                    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放  
+  
+                    //第7步：绘制点    
+                    for (var i = 0; i < markerArr.length; i++) {  
+                        var p0 = markerArr[i].point.split(",")[0];  
+                        var p1 = markerArr[i].point.split(",")[1];  
+                        var p2 = markerArr[i].point.split(",")[2];
+                        var maker = addMarker(new window.BMap.Point(p0, p1,p2), i);  
+                        addInfoWindow(maker, markerArr[i], i);   
+                    } 
+                } 
+  
+                // 添加标注  
+                function addMarker(point, index) {  
+                    var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png",  
+                        new BMap.Size(23, 25), {  
+                            offset: new BMap.Size(10, 25),  
+                            imageOffset: new BMap.Size(0, 0 - index * 25)  
+                        });  
+                    var marker = new BMap.Marker(point, { icon: myIcon });  
+                    map.addOverlay(marker);  
+                    return marker;  
+                }  
+  
+                // 添加信息窗口  
+                function addInfoWindow(marker, poi) {  
+                    //pop弹窗标题  
+                    var title = '<div style="font-weight:bold;color:#CE5521;font-size:14px">' + poi.title + '</div>';  
+                    //pop弹窗信息  
+                    var html = [];  
+                    html.push('<table cellspacing="0" style="table-layout:fixed;width:100%;font:12px arial,simsun,sans-serif;color:#6A5ACD;font-size:14px"><tbody>');  
+                    html.push('<tr>');  
+                    html.push('<td style="vertical-align:top;line-height:16px;width:35px;white-space:nowrap;word-break:keep-all">地址:</td>');  
+                    html.push('<td style="vertical-align:top;line-height:16px">' + poi.address + ' </td>');  
+                    html.push('</tr>');  
+                    html.push('<tr>'); 
+                    html.push('<td style="vertical-align:top;line-height:16px;width:35px;white-space:nowrap;word-break:keep-all">yifan:</td>');  
+                    html.push('<td style="vertical-align:top;line-height:16px">' + poi.fan + ' </td>'); 
+                    html.push('</tr>'); 
+                    html.push('</tbody></table>');  
+                    var infoWindow = new BMap.InfoWindow(html.join(""), { title: title, width: 200 });  
+  
+                    var openInfoWinFun = function () {  
+                        marker.openInfoWindow(infoWindow);  
+                    };  
+//                     marker.addEventListener("click", openInfoWinFun);  
+					marker.addEventListener("click", openInfoWinFun);
+                    return openInfoWinFun;  
+                }  
+  
+                //异步调用百度js  
+                function map_load() {  
+                    var load = document.createElement("script");  
+                    load.src = "http://api.map.baidu.com/api?v=1.4&callback=map_init";  
+                    document.body.appendChild(load);  
+                }  
+                window.onload = map_load;  
+
+</script>
+<script type="text/javascript">
+	'use strict';
+
+	window.addEventListener('load', function () {
+		var carousels = document.querySelectorAll('.carousel');
+
+		for (var i = 0; i < carousels.length; i++) {
+			carousel(carousels[i]);
+		}
+	});
+
+	function carousel(root) {
+		var figure = root.querySelector('figure'),
+			nav = root.querySelector('nav'),
+			images = figure.children,
+			n = images.length,
+			gap = root.dataset.gap || 0,
+			bfc = 'bfc' in root.dataset,
+			theta = 2 * Math.PI / n,
+			currImage = 0;
+
+		setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+		window.addEventListener('resize', function () {
+			setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+		});
+
+		setupNavigation();
+
+		function setupCarousel(n, s) {
+			var apothem = s / (2 * Math.tan(Math.PI / n));
+
+			figure.style.transformOrigin = '50% 50% ' + -apothem + 'px';
+
+			for (var i = 0; i < n; i++) {
+				images[i].style.padding = gap + 'px';
+			}for (i = 1; i < n; i++) {
+				images[i].style.transformOrigin = '50% 50% ' + -apothem + 'px';
+				images[i].style.transform = 'rotateY(' + i * theta + 'rad)';
+			}
+			if (bfc) for (i = 0; i < n; i++) {
+				images[i].style.backfaceVisibility = 'hidden';
+			}rotateCarousel(currImage);
+		}
+
+		function setupNavigation() {
+			nav.addEventListener('click', onClick, true);
+
+			function onClick(e) {
+				e.stopPropagation();
+
+				var t = e.target;
+				if (t.tagName.toUpperCase() != 'BUTTON') return;
+
+				if (t.classList.contains('next')) {
+					currImage++;
+				} else {
+					currImage--;
+				}
+
+				rotateCarousel(currImage);
+			}
+		}
+
+		function rotateCarousel(imageIndex) {
+			figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
+		}
+	}
+</script>
+
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smile</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Walk Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+
+	setInterval(function() {
+		var beforeTime = ""
+	    var now = (new Date()).toLocaleString();
+	    $('#nowTime').text(now);
+	}, 1000);
+
+	setInterval(function(){
+		var faultDat = "2016/1/3 16:30:00";
+		var stime = Date.parse(new Date(faultDat));
+		var etime = Date.parse(new Date());
+		var usedTime = etime - stime;
+		var fault = new Date(usedTime);
+		var y = fault.getFullYear()-1970;
+		var m = fault.getMonth()+1;
+		 m = m < 10 ? ('0' + m) : m;
+		var d = fault.getDate();
+		 d = d < 10 ? ('0' + d) : d;
+		var h = fault.getHours();
+		 h = h < 10 ? ('0' + h) : h;
+		var minute = fault.getMinutes();
+		 minute = minute < 10 ? ('0' + minute) : minute;
+	          var second = fault.getSeconds();
+	             second = second < 10 ? ('0' + second) : second;
+	    var faultTime = y + '年' + m + '个月' + d + '天 ' + '　' + h + '小时' + minute + '分钟' + second+"秒";
+		 $('#intervalTime').text(faultTime);
+	}, 1000);
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<form>
+<!-- 						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required=""> -->
+<!-- 						<input type="submit" value="" > -->
+<!-- 						<div class="clearfix"> </div> -->
+						<!-- 透明背景 -->
+						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+						<!-- 白色背景 -->
+<!-- 						<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script> -->
+					</form>
+				</div>
+				<div class="header-left1">
+<!-- 					<h1><a href="index.html">笑容<span> 请保持微笑，否则我可能会忘记你的样子  </span></a></h1> -->
+					<h1><a href="index.html">笑容<span>&nbsp;&nbsp;&nbsp;&nbsp; 爱君君恐遇渣男  </span></a></h1>
+				</div>
+				<!-- #push_sidebar -->
+				<div class="top-nav">
+					 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>回忆录</h3>
+						<ul>
+							<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+							<li><a href="shilu.html"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>石路</a></li>
+							<li><a href="huqiu.html"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>虎丘</a></li>
+							<li><a href="photos.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>美照</a></li>
+							<li><a href="smile.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>笑容</a></li>
+							<li><a href="footmark.html"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>足迹</a></li>
+						</ul>
+					</nav>
+					 <div class="main buttonset">	
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+					</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+						<script src="js/classie.js"></script>
+						<script>
+							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+							showRightPush = document.getElementById( 'showRightPush' ),
+							body = document.body;
+
+							showRightPush.onclick = function() {
+								classie.toggle( this, 'active' );
+								classie.toggle( body, 'cbp-spmenu-push-toleft' );
+								classie.toggle( menuRight, 'cbp-spmenu-open' );
+								disableOther( 'showRightPush' );
+							};
+
+							function disableOther( button ) {
+								if( button !== 'showRightPush' ) {
+									classie.toggle( showRightPush, 'disabled' );
+								}
+							}
+						</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- services -->
+	<div class="services">
+		<div class="container">
+			<h3>Smile</h3>
+			<!-- 你的笑容像一缕阳光，感染者我 -->
+			<p class="dummy-text">Your smile is like a ray of sunshine, infected me .</p>
+			<div class="services-grids">
+				<div class="col-md-4 services-grid" style="margin-left: 100px;">
+					<figure class="blog-figure">
+						<img src="images/beijing4.jpg" alt=" " class="img-responsive" />
+					</figure>
+<!-- 					你为什么在乐观的脸上显得如此悲伤？请你告诉我不幸福的事，让我和你分担一下好吗？ 。  -->
+					<h5><a href="words.html">Why do you look so sad on your optimistic face? Would you please tell me the unhappiness and let me share it with you? </a></h5>
+				</div>
+				<div class="col-md-4 services-grid" style="margin-left: 50px;width:600px;height:500px;">
+					<figure class="blog-figure">
+						<video src="images/beijing5.mp4" width="500" height="300" type="video/mp4" controls="controls" style="border: 0;padding: 0;margin: 0;"></video>
+					</figure>
+					<!-- 你的笑容我永远忘不了，还有标志的虎牙  -->
+					<h5><a href="words.html"> Your smile I'll never forget, and the sign of the tiger tooth.  </a></h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+<!-- footer -->
+	<div class="footer" style="margin-top: 100px;">
+		<div class="container">
+			<div class="col-md-3 footer-grid">
+				<img src="images/yf4.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h2><a href="index.html">Can <span>you remember me?</span></a></h2>
+				<p>Now the most regret is the farewell three years ago, but at that time was rejected after sad to the extreme, did stupid things </p>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Flickr Photos</h4>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you2.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/you3.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid1">
+					<a href="words.html"><img src="images/xuchang4.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h4>Booking Hours</h4>
+				<div class="footer-grid2">
+					<ul class="timings">
+						<li>Last time we met<i>-</i> <div id="faultDate">2016-1-3 16:30:00</div></li>
+							<li>Present time  <i>-</i> 
+								<div id = "nowTime"></div>
+							</li>
+						<li>Time is over <i>-</i>
+							<div id = "intervalTime"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p >Copyright &copy; 2018 - <span>Collect from 一帆专属</span>&nbsp;&nbsp;|&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn" title="苏ICP备18068520号" target="_blank" style="font-family:arial;font-size:15px;">苏ICP备18068520号</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+</body>
+</html>
